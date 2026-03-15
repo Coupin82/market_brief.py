@@ -85,7 +85,7 @@ msg["Subject"] = "📊 Market Intelligence Brief"
 msg["From"] = EMAIL_USER
 msg["To"] = EMAIL_TO
 
-server = smtplib.SMTP("smtp.office365.com", 587)
+server = smtplib.SMTP("smtp.gmail.com", 587)
 server.starttls()
 server.login(EMAIL_USER, EMAIL_PASS)
 server.sendmail(EMAIL_USER, EMAIL_TO, msg.as_string())
